@@ -28,7 +28,7 @@ public class Main {
 		System.out.println("=======================");
 		// Reemplanzando la posicion 1
 		System.out.println(listCars.get(1).toString());
-		listCars.add(1, new Cotxe("Audi", "A8", 8, 4600));
+		listCars.set(1, new Cotxe("Audi", "A8", 8, 4600));
 		System.out.println(listCars.get(1).toString());
 		System.out.println("=======================");
 
@@ -36,8 +36,7 @@ public class Main {
 
 		// Sustituyendo el Seat Ibiza (primero lo removemos y luegolo añadimos)
 		int index = buscarIndex(listCars, "Seat", "Ibiza");
-		listCars.remove(index);
-		listCars.add(index, new Cotxe("Seat", "Mii", 3, 1000));
+		listCars.set(index, new Cotxe("Seat", "Mii", 3, 1000));
 
 		System.out.println(listCars.toString());
 
