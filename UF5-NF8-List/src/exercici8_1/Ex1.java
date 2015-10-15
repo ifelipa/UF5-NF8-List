@@ -1,6 +1,8 @@
 package exercici8_1;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -19,7 +21,7 @@ public class Ex1 {
 		for (int i = 2; i < 25; i++) {
 			listNumber.add(listNumber.get(i - 2) + listNumber.get(i - 1));
 		}
-
+		listNumber.removeAll(Collections.singleton(13));
 		// Imprimos la lista
 		for (int i = 0; i < listNumber.size(); i++) {
 			System.out.println("For: " + listNumber.get(i));
